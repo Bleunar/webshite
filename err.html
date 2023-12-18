@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-roar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"type="image/x-icon" href="/peter.png">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="title">
+                <div class="x" onclick="location.href='index.html'">
+                    <h1 class="title-xtra1"><b>Apparel.</b></h1>
+                    <h1 class="title-xtra2">city</h1>
+                </div>
+            </div>
+            <div class="options">
+                <a href="products.html" name="products">Products</a>
+                <a href="contacts.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+
+        <div class="product-page">
+            <div class="construction">
+                <img src="cons/2.gif" alt="construction" class="const-img">
+                <img src="cons/1.gif" alt="construction" class="const-img">
+                <img src="cons/3.gif" alt="construction" class="const-img x">
+            </div>
+            <h1>Development in Progress</h1>
+            <p>Try again later</p>
+            <a href="products.html">OKAY</a>
+        </div>
+
+        <style>
+
+            .construction{
+                width: 60%;
+                height: 30vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .const-img{
+                height: fit-content;
+                width: fit-content;
+            }
+            .product-page{
+                height: 60vh;
+                margin-top: 10vh;
+                margin-bottom: 10vh;
+            }
+            .main{
+                background-color: white;
+            }
+
+            @media screen and (max-width: 800px) {
+                .x{
+                    display: none;
+                }
+                
+            }
+        </style>
+
+
+        <div class="footer">
+            <p><b>Toni Ross Arabit</b><br>FC1 - BSIT2 - 3</p>
+        </div>
+
+    </div>
+</body>
+</html>

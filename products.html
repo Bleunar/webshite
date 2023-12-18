@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"type="image/x-icon" href="/logo.png">
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="title">
+                <div class="x" onclick="location.href='index.html'">
+                    <h1 class="title-xtra1"><b>Apparel.</b></h1>
+                    <h1 class="title-xtra2">city</h1>
+                </div>
+            </div>
+            <div class="options">
+                <a href="#products">Products</a>
+                <a href="contacts.html">Contact</a>
+                <a href="about.html">About</a>
+            </div>
+        </div>
+
+        <div class="products" id="products" style="background-image: url(textures/den1.jpg);">
+            <!-- <h2>Categories</h2> -->
+            <div class="products-container">
+                <div class="categ-card rot1" style="background-image: url('prod-categ/fab2.webp');" onclick="location.href='err.html'">
+                    <h2>Tops</h2>
+                </div>
+
+                <div class="categ-card rot2" style="background-image: url('prod-categ/fab.jpg');" onclick="location.href='err.html'">
+                    <h2>Bottoms</h2>
+                </div>
+
+                <div class="categ-card rot3" style="background-image: url('prod-categ/fab3.jpg');" onclick="location.href='err.html'">
+                    <h2>Designer</h2>
+                </div>
+
+                <div class="categ-card rot4" style="background-image: url('prod-categ/fab4.jpg');" onclick="location.href='err.html'">
+                    <h2>Outerwear</h2>
+                </div>
+
+                <div class="categ-card rot1" style="background-image: url('prod-categ/fab5.jpg');" onclick="location.href='err.html'">
+                    <h2>Shoes</h2>
+                </div>
+
+                <div class="categ-card rot2" style="background-image: url('prod-categ/fab6.jpg');" onclick="location.href='err.html'">
+                    <h2>Accessories</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <style>
+            .categ-card{
+                cursor: pointer;
+                box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 1);
+                border: 1px solid rgb(45, 45, 45, 0.2   );
+                width: 220px;
+                height: 320px;
+                color: rgb(200,200,200);
+
+                background-color: rgb(0, 0, 0);
+                background-position: center;
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                transition: 200ms ease-in-out;
+                transform: scale(100%);
+            }
+
+            .rot1{
+                -ms-transform: rotate(5deg);
+                -webkit-transform: rotate(5deg);
+                transform: rotate(5deg);
+            }
+            .rot2{
+                -ms-transform: rotate(-2deg);
+                -webkit-transform: rotate(-2deg);
+                transform: rotate(-2deg);
+            }
+            .rot3{
+                -ms-transform: rotate(-5deg);
+                -webkit-transform: rotate(-5deg);
+                transform: rotate(-5deg);
+            }
+
+            .rot4{
+                -ms-transform: rotate(1deg);
+                -webkit-transform: rotate(1deg);
+                transform: rotate(1deg);
+            }
+
+            
+            .categ-card:hover{
+                transform: rotate(0deg);
+                transition: 200ms ease-in-out;
+                transform: scale(105%);
+                box-shadow: 12px 12px 30px 0px rgba(0, 0, 0, 1);
+            }
+
+            .categ-card h2{
+                font-weight: 200;
+                font-family: monospace;
+                background-color: rgba(0, 0, 0, 0.5);
+                width: 100%;
+                height: fit-content;
+            }
+
+            @media screen and (max-width: 669px) {
+                .categ-card{
+                    width: 80%;
+                    height: 250px;
+                }
+            }
+        </style>
+
+        <div class="footer">
+            <p><b>Toni Ross Arabit</b><br>FC1 - BSIT2 - 3</p>
+        </div>
+
+    </div>
+</body>
+</html>
